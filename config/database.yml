@@ -1,0 +1,27 @@
+
+
+default: &default
+  adapter: mysql2
+  encoding: utf8
+  database: user1
+  pool: 5
+  username: root
+  password: poombavai
+  socket: /var/run/mysqld/mysqld.sock
+
+development:
+  adapter: mysql2
+  encoding: utf8
+  database: user1
+  pool: 5
+  username: root
+  password: poombavai
+
+production:
+  adapter: mysql2
+  encoding: utf8
+  database: user1
+  pool: 5
+  username: root
+  password: poombavai
+

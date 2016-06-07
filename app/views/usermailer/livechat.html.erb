@@ -1,0 +1,11 @@
+
+
+<h1>Altius Technologies</h1>
+<% @a=User.all[-1] %>
+
+<h2>Hello,</h2>
+<p> Recieved a new query from <%= @a.name%> <br>
+Email:
+<%= @a.email%><br>
+Message:
+<%= @a.message%></p>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Altius</title>
+  <%= stylesheet_link_tag 'creative/manifest.css', media: 'all' %>
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+  <%= javascript_include_tag 'creative/manifest.js' %>
+  <%= csrf_meta_tags %>
+
+
+
+	<!--Start of Tawk.to Script (Live chat)-->
+
+<script type="text/javascript">
+var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+(function(){
+var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+s1.async=true;
+s1.src='https://embed.tawk.to/575256e8c4262d820f380de5/default';
+s1.charset='UTF-8';
+s1.setAttribute('crossorigin','*');
+s0.parentNode.insertBefore(s1,s0);
+})();
+</script>
+
+	<!--End of Tawk.to Script-->
+
+
+
+</head>
+
+<body>
+
+<%= yield %>
+
+</body>
+</html>
+

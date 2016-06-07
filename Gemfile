@@ -5,9 +5,10 @@ source 'https://rubygems.org'
 gem 'rails', '4.2.0'
 gem 'execjs'
 gem 'therubyracer'
-gem 'mysql2', '~> 0.3.18'
-
-
+gem 'pg'
+#gem 'mysql2', '~> 0.3.18'
+gem 'rails_12factor', group: :production
+gem 'puma'
 # gem 'sqlite3'
 
 # Use SCSS for stylesheets

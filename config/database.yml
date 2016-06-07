@@ -10,12 +10,16 @@ default: &default
   socket: /var/run/mysqld/mysqld.sock
 
 development:
-  adapter: mysql2
-  encoding: utf8
-  database: user1
-  pool: 5
-  username: root
-  password: poombavai
+#  <<: *default
+  adapter: postgresql
+  database: db/production.sqlite3
+#development:
+#  adapter: mysql2
+#  encoding: utf8
+#  database: user1
+#  pool: 5
+#  username: root
+#  password: poombavai
 
 production:
   adapter: mysql2

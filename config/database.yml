@@ -1,31 +1,19 @@
-
-
-default: &default
-  adapter: mysql2
-  encoding: utf8
-  database: user1
-  pool: 5
-  username: root
-  password: poombavai
-  socket: /var/run/mysqld/mysqld.sock
-
 development:
-#  <<: *default
   adapter: postgresql
-  database: db/production.sqlite3
-#development:
-#  adapter: mysql2
-#  encoding: utf8
-#  database: user1
-#  pool: 5
-#  username: root
-#  password: poombavai
-
-production:
-  adapter: mysql2
-  encoding: utf8
-  database: user1
+  encoding: unicode
+  database: altius_development
   pool: 5
-  username: root
-  password: poombavai
+  username: postgres
+  password: altius
+  host: 192.168.1.59
+  port: 5432
 
+test:
+  adapter: postgresql
+  encoding: unicode
+  database: altius_test
+  pool: 5
+  username: postgres
+  password: altius
+  host: 192.168.1.59
+  port: 5432

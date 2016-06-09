@@ -9,7 +9,7 @@ class CreativesController < ApplicationController
   def get_query
     @user = User.new(user_params)
     if @user.save
-      Usermailer.livechat(@user).deliver
+   #   Usermailer.livechat(@user).deliver
       flash[:notice] = "Message sent"
       redirect_to root_path
     else 
